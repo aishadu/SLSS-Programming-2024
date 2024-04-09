@@ -20,13 +20,15 @@
 # print(stars(1000))
 # print(stars(-1))
 
-def biggest_of_three(num1, num2, num3):
-    num1 = input("Input the first number")
-    num2 =input("Input the second number")
-    num3 = input("Input the third number")
-    if num1 > num2 or num3:
-        return num1
-    elif num2 > num1 or num3:
-        return num2
-    else:
-        return num3
+def pyramid(base_width: int):
+    """Prints a pyramid of stars with given base
+    Params:
+    base_width: width of base of pyramid
+    """
+
+    for i in range(base_width):
+        print("*" * (i+1))
+    
+pyramid(1)
+pyramid(5)
+pyramid(20)
