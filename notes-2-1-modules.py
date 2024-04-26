@@ -42,6 +42,4 @@ def main():
     print(f"Number of Heads: {heads}")
     print(f"Number of Tails: {tails}")
     print(f"Number of Other: {other}")
-
-
 main()
